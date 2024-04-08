@@ -27,7 +27,7 @@ namespace Store.Api
             // Using use To Ask Clr remove Scope after Finised 
             using var Scope = app.Services.CreateScope();
 
-            var Services = Scope.ServiceProvider;
+            var Services = Scope.ServiceProvider; 
             
             var _dbcontext = Services.GetRequiredService<StoreDbContext>();
             var loggerFactory = Services.GetRequiredService<ILoggerFactory>();

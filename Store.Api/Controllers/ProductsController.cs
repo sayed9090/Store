@@ -8,7 +8,6 @@ namespace Store.Api.Controllers
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productsRepo;
-
         public ProductsController(IGenericRepository<Product> ProductsRepo)
         {
             _productsRepo = ProductsRepo;
